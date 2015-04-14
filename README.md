@@ -1,3 +1,3 @@
-# Stylus-Bug
+# Stylus-Playground
 
-Collect and report Stylus bugs.
+Stylus environment for practice and testing.
