@@ -1,9 +1,12 @@
 {
   "name": "stylus-playground",
-  "homepage": "https://github.com/cssmagic/stylus-playground",
   "version": "0.0.0",
+  "homepage": "https://github.com/cssmagic/stylus-playground",
   "author": "cssmagic <cssmagic.cn@gmail.com>",
   "description": "Stylus environment for practice and testing.",
+  "keywords": [
+    "stylus"
+  ],
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,18 +15,11 @@
     "type": "git",
     "url": "https://github.com/cssmagic/stylus-playground.git"
   },
-  "keywords": [
-    "stylus"
-  ],
   "bugs": {
     "url": "https://github.com/cssmagic/stylus-playground/issues"
   },
   "dependencies": {
-    "nib": "^1.1.0"
+    "gulpfiles": "^0.4.3"
   },
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-stylus": "^2.0.1",
-    "stylus": "^0.50.0"
-  }
+  "devDependencies": {}
 }
