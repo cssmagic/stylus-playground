@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.2",
     "cmui-brush": "^0.1.1",
     "cmui-zero": "^0.1.2",
     "del": "2.*",
