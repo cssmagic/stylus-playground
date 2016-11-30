@@ -19,7 +19,13 @@
     "url": "https://github.com/cssmagic/stylus-playground/issues"
   },
   "dependencies": {
-    "gulpfiles": "^0.4.3"
+    "autoprefixer": "^6.5.3",
+    "cmui-brush": "^0.1.1",
+    "cmui-zero": "^0.1.2",
+    "del": "2.*",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-stylus": "2.*"
   },
   "devDependencies": {}
 }
