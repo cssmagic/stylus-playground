@@ -1,6 +1,6 @@
 {
   "name": "stylus-playground",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/cssmagic/stylus-playground",
   "author": "cssmagic <cssmagic.cn@gmail.com>",
   "description": "Stylus environment for practice and testing.",
@@ -9,6 +9,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,12 +22,11 @@
   "dependencies": {
     "autoprefixer": "^6.5.3",
     "browser-sync": "^2.18.2",
-    "cmui-brush": "^0.1.1",
     "cmui-zero": "^0.1.2",
-    "del": "2.*",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-postcss": "^6.2.0",
-    "gulp-stylus": "2.*"
+    "gulp-stylus": "2.*",
+    "normalize.css": "^5.0.0"
   },
   "devDependencies": {}
 }
