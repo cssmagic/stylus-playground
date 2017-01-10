@@ -6,7 +6,7 @@
 
 ## 背景
 
-Stylus 是一款 CSS 预处理器，与 Sass 和 Less 相比，Stylus 更像是一门编程语言，功能更为强大和灵活。同时，Stylus 完全基于 JavaScript 开发，对 Node.js 工具链极为友好。
+Stylus 是一款 CSS 预处理器，与 Sass 和 Less 相比，Stylus 更像是一门编程语言，功能强大，语法灵活。同时，Stylus 完全由 JavaScript 实现，对 Node.js 工具链极为友好。
 
 ## 使用方法
 
