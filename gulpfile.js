@@ -28,6 +28,10 @@ gulp.task('css', () => {
 			errors: true,
 			'include css': true,
 		}))
+		.on('error', function (err) {
+			console.error(err.message)
+			this.emit('end')
+		})
 		.pipe(postcss([
 			autoprefixer({
 				browsers: AUTOPREFIXER_BROWSERS,
