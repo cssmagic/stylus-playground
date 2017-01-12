@@ -8,6 +8,16 @@ const PATH_CSS = './src/css/'
 const FILES_CSS = './src/css/*.styl'
 const FILES_HTML = './src/*.html'
 
+const VENDOR_FILES = [
+	'./node_modules/normalize.css/normalize.css',
+	'./node_modules/cmui-zero/dist/zero.css',
+]
+
+gulp.task('vendor', () => {
+	return gulp.src(VENDOR_FILES)
+		.pipe(gulp.dest(path.join(PATH_CSS, 'vendor')))
+})
+
 gulp.task('css', () => {
 	const stylus = require('gulp-stylus')
 	const postcss = require('gulp-postcss')
@@ -57,6 +67,7 @@ gulp.task('serve', (done) => {
 })
 
 gulp.task('default', gulp.series([
+	'vendor',
 	'css',
 	'serve',
 	gulp.parallel([
