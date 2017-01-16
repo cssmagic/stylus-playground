@@ -31,6 +31,21 @@ gulp.task('css', () => {
 		'iOS >= 7',
 	]
 
+	function logError(err) {
+		let plugin = err.plugin || ''
+		const nameMapping = {
+			'gulp-stylus': 'Stylus',
+			'gulp-postcss': 'PostCSS',
+		}
+		const pluginName = nameMapping[plugin] || 'Unknown'
+		console.error(`\n[${pluginName}] Compiling Error!\n`)
+		console.error(err.stack || err.message)
+		console.error('\n')
+
+		browserSync.notify(`<span style="color: red; font-family: sans-serif; font-weight: bold;"><code>${pluginName}</code> Compiling Error!</span>`)
+		this.emit('end')
+	}
+
 	return gulp.src(FILES_CSS)
 		.pipe(stylus({
 			linenos: true,
@@ -38,15 +53,13 @@ gulp.task('css', () => {
 			errors: true,
 			'include css': true,
 		}))
-		.on('error', function (err) {
-			console.error(err.message)
-			this.emit('end')
-		})
+		.on('error', logError)
 		.pipe(postcss([
 			autoprefixer({
 				browsers: AUTOPREFIXER_BROWSERS,
 			}),
 		]))
+		.on('error', logError)
 		.pipe(gulp.dest(PATH_CSS))
 		.pipe(browserSync.stream())
 })
