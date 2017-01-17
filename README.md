@@ -2,11 +2,23 @@
 
 > Stylus environment for practice and testing.
 
-用于实践和测试 Stylus 的简易开发环境。
+用于实践和测试 Stylus 的简易开发环境。无需配置，开箱即用！
 
 ## 背景
 
-Stylus 是一款 CSS 预处理器，与 Sass 和 Less 相比，Stylus 更像是一门编程语言，功能强大，语法灵活。同时，Stylus 完全由 JavaScript 实现，对 Node.js 工具链极为友好。
+Stylus 是一款 CSS 预处理器，与 Sass 和 Less 相比，它更像是一门编程语言，功能强大，语法灵活。同时，Stylus 完全由 JavaScript 实现，对 Node.js 工具链极为友好。
+
+## 功能亮点
+
+* 已配置好 Stylus 语言的编译程序
+* 已内置 Autoprefixer 自动添加浏览器前缀
+* 默认加载 Normalize 和 CSS Reset
+* 修改文件时自动刷新浏览器 😍
+* 编译错误消息直接推送到浏览器 😍
+
+![stylus-playground](https://cloud.githubusercontent.com/assets/1231359/21881255/532f72ac-d8de-11e6-8250-0bb11401dcc8.png)<br><sup>（工作模式示意：一边编辑源码、一边在浏览器中立即看到效果）</sup>
+
+![error-report](https://cloud.githubusercontent.com/assets/1231359/22007568/ab7f0822-dcae-11e6-9c1f-8f65357b7176.png)<br><sup>（错误消息示意：编译错误直接推送到浏览器）</sup>
 
 ## 使用方法
 
